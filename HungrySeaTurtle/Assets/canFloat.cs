@@ -6,6 +6,7 @@ public class canFloat : MonoBehaviour
 {
 
     private GameObject can;
+    public GameObject DecideDemo;
     bool up = true;
 
     // Start is called before the first frame update
@@ -47,5 +48,10 @@ public class canFloat : MonoBehaviour
           }
       }
     }
+
+    private void OnTriggerEnter2D (Collider2D collider)
+  {
+    DecideDemo.SetActive(true);
+  }
 
 }
