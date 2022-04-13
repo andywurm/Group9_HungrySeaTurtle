@@ -421,15 +421,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '        You are controling a hungry turtle, you can use arrow keys to
-    move arround and find foods. However, your turtle will eat everything since he
-    is hungry. Try to find some foods for the turtle and avoid the trashes.'
+  m_Text: 'You are controling a hungry sea turtle.
+
+    Use the arrow keys to move
+    around and find food. However, your turtle will eat everything since he is hungry.
+    Try to find some food for the turtle and avoid the trash.'
 --- !u!222 &646964680
 CanvasRenderer:
   m_ObjectHideFlags: 0
