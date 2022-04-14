@@ -51,6 +51,7 @@ public class canFloat : MonoBehaviour
 
     private void OnTriggerEnter2D (Collider2D collider)
   {
+    Time.timeScale = 0f;
     DecideDemo.SetActive(true);
   }
 
