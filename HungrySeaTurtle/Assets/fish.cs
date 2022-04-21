@@ -10,7 +10,7 @@ public class fish : MonoBehaviour
     void Start()
     {
         
-        myfish = GetComponent<Rigidbody2D>();
+        myfish =this.GetComponent<Rigidbody2D>();
 		speed = 5;
 		myfish.velocity = new Vector2 (-speed, 0);
     }
@@ -22,6 +22,6 @@ public class fish : MonoBehaviour
     void Update()
     {
        if(transform.position.x < xMax)
-			Destroy(gameObject);
+			Destroy(this.gameObject);
     }
 }

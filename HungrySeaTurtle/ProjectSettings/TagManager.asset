@@ -49,3 +49,9 @@ TagManager:
   - name: Background
     uniqueID: 253495329
     locked: 0
+  - name: trash
+    uniqueID: 583440585
+    locked: 0
+  - name: fish
+    uniqueID: 3207165379
+    locked: 0
