@@ -2363,6 +2363,7 @@ GameObject:
   - component: {fileID: 1963632596}
   - component: {fileID: 1963632598}
   - component: {fileID: 1963632597}
+  - component: {fileID: 1963632599}
   m_Layer: 0
   m_Name: turtle1
   m_TagString: Untagged
@@ -2499,3 +2500,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1963632599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963632593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac8663efd5ab477fb8799c189d21a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

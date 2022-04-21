@@ -22,7 +22,9 @@ public class movement : MonoBehaviour
     {
         movements = Input.GetAxis("Horizontal");
 		movement2 = Input.GetAxis("Vertical");
-		
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8f, 8f), Mathf.Clamp(transform.position.y, -5f, 5f),
+		transform.position.z);
+
     }
 	 void FixedUpdate(){
 		rigid.velocity = new Vector2(movements * speed, movement2 * speed);
@@ -34,4 +36,5 @@ public class movement : MonoBehaviour
         transform.Rotate(0, 180, 0);
         isFacingRight = !isFacingRight;
     }
+
 }
