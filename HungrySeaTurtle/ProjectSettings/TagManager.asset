@@ -7,6 +7,14 @@ TagManager:
   - ShowDecision
   - DecideDemo
   - Fish
+  - BottleInfo
+  - BoxInfo
+  - DetergentInfo
+  - StrawInfo
+  - Bottle
+  - Detergent
+  - Box
+  - Straw
   layers:
   - Default
   - TransparentFX
