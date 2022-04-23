@@ -6,8 +6,8 @@ public class trashSpawn : MonoBehaviour
 {	
 	public GameObject[] trash;
 	[SerializeField] int respawnTime = 5;
-	float xMin = 8.0f;
-	float xMax = -16f;
+	float xMin = 6.5f;
+	float xMax = -6.5f;
 	float yMin = 4.6f;
     // Start is called before the first frame update
     void Start()

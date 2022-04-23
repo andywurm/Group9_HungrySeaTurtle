@@ -22,7 +22,7 @@ public class movement : MonoBehaviour
     {
         movements = Input.GetAxis("Horizontal");
 		movement2 = Input.GetAxis("Vertical");
-		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -14f, 8f), Mathf.Clamp(transform.position.y, -5f, 5f),
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7f, 7f), Mathf.Clamp(transform.position.y, -5f, 5f),
 		transform.position.z);
 
     }
