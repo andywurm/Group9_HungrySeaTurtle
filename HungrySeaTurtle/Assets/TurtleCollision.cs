@@ -10,10 +10,13 @@ public class TurtleCollision : MonoBehaviour
     [SerializeField] GameObject DisplayDetergentInfo;
     [SerializeField] GameObject DisplayBottleInfo;
     private bool firstBottle = false;
+    private bool firstGlassBottle = false;
+    private bool firstGlassBottle2 = false;
     private bool firstBox = false;
     private bool firstStraw = false;
     private bool firstDetergent = false;
     private bool firstCup = false;
+    private bool firstJar = false;
 
     private void OnTriggerEnter2D (Collider2D collider)
   {
@@ -64,6 +67,26 @@ public class TurtleCollision : MonoBehaviour
         firstBottle = true;
 
       }
+      else if(collider.gameObject.tag == "GlassBottle" && firstGlassBottle == false){
+
+        //Code for decreasing score goes here
+
+        Destroy(collider.gameObject);
+        DisplayBottleInfo.SetActive(true);
+        Time.timeScale = 0f;
+        firstGlassBottle = true;
+
+      }
+      else if(collider.gameObject.tag == "GlassBottle2" && firstGlassBottle2 == false){
+
+        //Code for decreasing score goes here
+
+        Destroy(collider.gameObject);
+        DisplayBottleInfo.SetActive(true);
+        Time.timeScale = 0f;
+        firstGlassBottle2 = true;
+
+      }
       else if(collider.gameObject.tag == "Cup" && firstCup == false){
 
         //Code for decreasing score goes here
@@ -72,6 +95,16 @@ public class TurtleCollision : MonoBehaviour
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
         firstCup = true;
+
+      }
+      else if(collider.gameObject.tag == "Jar" && firstJar == false){
+
+        //Code for decreasing score goes here
+
+        Destroy(collider.gameObject);
+        DisplayBottleInfo.SetActive(true);
+        Time.timeScale = 0f;
+        firstJar = true;
 
       }
       else {

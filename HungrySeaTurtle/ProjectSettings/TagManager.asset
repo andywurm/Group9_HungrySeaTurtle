@@ -16,6 +16,11 @@ TagManager:
   - Box
   - Straw
   - Cup
+  - BrokenCup
+  - Can
+  - GlassBottle
+  - Jar
+  - GlassBottle2
   layers:
   - Default
   - TransparentFX
