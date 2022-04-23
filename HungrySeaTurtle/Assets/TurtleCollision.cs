@@ -13,6 +13,7 @@ public class TurtleCollision : MonoBehaviour
     private bool firstBox = false;
     private bool firstStraw = false;
     private bool firstDetergent = false;
+    private bool firstCup = false;
 
     private void OnTriggerEnter2D (Collider2D collider)
   {
@@ -62,7 +63,18 @@ public class TurtleCollision : MonoBehaviour
         Time.timeScale = 0f;
         firstBottle = true;
 
-      } else {
+      }
+      else if(collider.gameObject.tag == "Cup" && firstCup == false){
+
+        //Code for decreasing score goes here
+
+        Destroy(collider.gameObject);
+        DisplayBottleInfo.SetActive(true);
+        Time.timeScale = 0f;
+        firstCup = true;
+
+      }
+      else {
 
         //Code for decreasing score goes here
 

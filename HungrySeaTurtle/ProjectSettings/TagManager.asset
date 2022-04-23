@@ -15,6 +15,7 @@ TagManager:
   - Detergent
   - Box
   - Straw
+  - Cup
   layers:
   - Default
   - TransparentFX

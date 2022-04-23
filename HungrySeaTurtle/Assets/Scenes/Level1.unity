@@ -2547,8 +2547,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Sea turtles can accidentally get their head \nor other body parts stuck
-    in bottles with big \nenough openings. This can lead to long term \nhealth complications
-    and even death."
+    in bottles/cups with big \nenough openings. This can lead to long term \nhealth
+    complications and even death."
 --- !u!222 &1704962185
 CanvasRenderer:
   m_ObjectHideFlags: 0
