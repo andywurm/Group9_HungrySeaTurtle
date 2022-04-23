@@ -9,7 +9,10 @@ public class TurtleCollision : MonoBehaviour
     [SerializeField] GameObject DisplayStrawInfo;
     [SerializeField] GameObject DisplayDetergentInfo;
     [SerializeField] GameObject DisplayBottleInfo;
-    private bool firstHit = false;
+    private bool firstBottle = false;
+    private bool firstBox = false;
+    private bool firstStraw = false;
+    private bool firstDetergent = false;
 
     private void OnTriggerEnter2D (Collider2D collider)
   {
@@ -20,49 +23,49 @@ public class TurtleCollision : MonoBehaviour
         Destroy(collider.gameObject);
 
       }
-      else if(collider.gameObject.tag == "Box" && firstHit == false) {
+      else if(collider.gameObject.tag == "Box" && firstBox == false) {
 
         //Code for decreasing score goes here
 
         Destroy(collider.gameObject);
         DisplayBoxInfo.SetActive(true);
         Time.timeScale = 0f;
-        firstHit = true;
+        firstBox = true;
 
       }
-      else if(collider.gameObject.tag == "Straw" && firstHit == false) {
+      else if(collider.gameObject.tag == "Straw" && firstStraw == false) {
 
         //Code for decreasing score goes here
 
         Destroy(collider.gameObject);
         DisplayStrawInfo.SetActive(true);
         Time.timeScale = 0f;
-        firstHit = true;
+        firstStraw = true;
 
       }
-      else if(collider.gameObject.tag == "Detergent" && firstHit == false) {
+      else if(collider.gameObject.tag == "Detergent" && firstDetergent == false) {
 
         //Code for decreasing score goes here
 
         Destroy(collider.gameObject);
         DisplayDetergentInfo.SetActive(true);
         Time.timeScale = 0f;
-        firstHit = true;
+        firstDetergent = true;
 
       }
-      else if(collider.gameObject.tag == "Bottle" && firstHit == false){
+      else if(collider.gameObject.tag == "Bottle" && firstBottle == false){
 
         //Code for decreasing score goes here
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
-        firstHit = true;
+        firstBottle = true;
 
       } else {
 
         //Code for decreasing score goes here
-        
+
         Destroy(collider.gameObject);
 
       }
