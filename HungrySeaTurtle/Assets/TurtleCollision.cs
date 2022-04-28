@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurtleCollision : MonoBehaviour
 {
@@ -18,12 +19,13 @@ public class TurtleCollision : MonoBehaviour
     private bool firstCup = false;
     private bool firstJar = false;
 
-    private void OnTriggerEnter2D (Collider2D collider)
+    
+    public void OnTriggerEnter2D (Collider2D collider)
   {
       if(collider.gameObject.tag == "Fish"){
 
-        //Code for adding to score goes here
-
+            //Code for adding to score goes here
+        hungerBar.Hunger += 20f;
         Destroy(collider.gameObject);
 
       }
