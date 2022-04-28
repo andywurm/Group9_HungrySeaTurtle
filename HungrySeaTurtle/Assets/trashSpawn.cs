@@ -6,6 +6,7 @@ public class trashSpawn : MonoBehaviour
 {	
 	public GameObject[] trash;
 	[SerializeField] int respawnTime = 5;
+	[SerializeField] int itemCount = 9;
 	float xMin = 6.5f;
 	float xMax = -6.5f;
 	float yMin = 4.6f;
@@ -15,7 +16,7 @@ public class trashSpawn : MonoBehaviour
         StartCoroutine(trashTime());
     }
 	private void spawnTrash(){
-		int randTrash = Random.Range(0, 9);
+		int randTrash = Random.Range(0, itemCount);
 		GameObject trashes = Instantiate(trash[randTrash]) as GameObject;
 		trashes.transform.position = new Vector2(Random.Range(xMin, xMax), yMin);
 	}
