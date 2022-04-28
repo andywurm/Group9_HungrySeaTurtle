@@ -163,6 +163,7 @@ MonoBehaviour:
   - {fileID: 8430589369112860746, guid: 7dd2c43874e615b468aab5057e53f3d6, type: 3}
   - {fileID: 4578772940513488751, guid: 63d29a200b6102345ac6d4af4093f9ac, type: 3}
   respawnTime: 5
+  itemCount: 9
 --- !u!4 &2269071
 Transform:
   m_ObjectHideFlags: 0
@@ -3240,8 +3241,6 @@ MonoBehaviour:
   DisplayStrawInfo: {fileID: 2059020044}
   DisplayDetergentInfo: {fileID: 332349842}
   DisplayBottleInfo: {fileID: 1976523376}
-  HungerSlider: {fileID: 1285608318}
-  Hunger: 100
 --- !u!114 &1963632600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3255,7 +3254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HungerSlider: {fileID: 1285608318}
-  Hunger: 100
 --- !u!1 &1976523376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3523,23 +3521,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3579,11 +3577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -255
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 75
+      value: -62
       objectReference: {fileID: 0}
     - target: {fileID: 5914645337204092891, guid: f2b5338e854702a4dbc7978d319e29f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
