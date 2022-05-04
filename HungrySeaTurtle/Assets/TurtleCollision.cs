@@ -11,7 +11,7 @@ public class TurtleCollision : MonoBehaviour
     [SerializeField] GameObject DisplayStrawInfo;
     [SerializeField] GameObject DisplayDetergentInfo;
     [SerializeField] GameObject DisplayBottleInfo;
-	[SerializeField] GameObject DisplayGameover;
+	  [SerializeField] GameObject DisplayGameover;
     private bool firstBottle = false;
     private bool firstGlassBottle = false;
     private bool firstGlassBottle2 = false;
@@ -123,19 +123,21 @@ public class TurtleCollision : MonoBehaviour
 
       }
       else if(collider.gameObject.tag == "theNet" ){
-		
-		Destroy(collider.gameObject);
+
+		    Destroy(collider.gameObject);
         DisplayGameover.SetActive(true);
         Time.timeScale = 0f;
+
 	  }
 
-
-      
 	else{
+
 		//Code for decreasing score goes here
-		
+
 		Destroy(collider.gameObject);
+
 	  }
+    
   }
 
 }
