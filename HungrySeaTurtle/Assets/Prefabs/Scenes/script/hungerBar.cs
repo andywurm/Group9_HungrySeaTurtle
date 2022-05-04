@@ -17,7 +17,7 @@ public class hungerBar : MonoBehaviour
   
     void Update()
     {
-        Debug.Log(Hunger);
+       // Debug.Log(Hunger);
         HungerSlider.value = Hunger;
 
         Hunger -= 1f * Time.deltaTime;
