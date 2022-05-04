@@ -18,8 +18,9 @@ public class TurtleCollision : MonoBehaviour
     private bool firstDetergent = false;
     private bool firstCup = false;
     private bool firstJar = false;
+    private bool firstCan = false;
 
-    
+
     public void OnTriggerEnter2D (Collider2D collider)
   {
       if(collider.gameObject.tag == "Fish"){
@@ -97,6 +98,16 @@ public class TurtleCollision : MonoBehaviour
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
         firstCup = true;
+
+      }
+      else if(collider.gameObject.tag == "Can" && firstCan == false){
+
+        //Code for decreasing score goes here
+
+        Destroy(collider.gameObject);
+        DisplayBottleInfo.SetActive(true);
+        Time.timeScale = 0f;
+        firstCan = true;
 
       }
       else if(collider.gameObject.tag == "Jar" && firstJar == false){
