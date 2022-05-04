@@ -137,7 +137,7 @@ public class TurtleCollision : MonoBehaviour
 		Destroy(collider.gameObject);
 
 	  }
-    
+
   }
 
 }
