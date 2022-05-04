@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TurtleCollision : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class TurtleCollision : MonoBehaviour
     [SerializeField] GameObject DisplayStrawInfo;
     [SerializeField] GameObject DisplayDetergentInfo;
     [SerializeField] GameObject DisplayBottleInfo;
+	[SerializeField] GameObject DisplayGameover;
     private bool firstBottle = false;
     private bool firstGlassBottle = false;
     private bool firstGlassBottle2 = false;
@@ -120,14 +122,20 @@ public class TurtleCollision : MonoBehaviour
         firstJar = true;
 
       }
-      else {
+      else if(collider.gameObject.tag == "theNet" ){
+		
+		Destroy(collider.gameObject);
+        DisplayGameover.SetActive(true);
+        Time.timeScale = 0f;
+	  }
 
-        //Code for decreasing score goes here
 
-        Destroy(collider.gameObject);
-
-      }
-
+      
+	else{
+		//Code for decreasing score goes here
+		
+		Destroy(collider.gameObject);
+	  }
   }
 
 }

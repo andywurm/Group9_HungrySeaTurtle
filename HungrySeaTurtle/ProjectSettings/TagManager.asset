@@ -21,6 +21,7 @@ TagManager:
   - GlassBottle
   - Jar
   - GlassBottle2
+  - theNet
   layers:
   - Default
   - TransparentFX
