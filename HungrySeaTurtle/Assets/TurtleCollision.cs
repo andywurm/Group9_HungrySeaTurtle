@@ -132,6 +132,7 @@ public class TurtleCollision : MonoBehaviour
 
       
 	else{
+		//// if tag is fish hungerbar up , else hungerbar down
 		//Code for decreasing score goes here
 		
 		Destroy(collider.gameObject);
