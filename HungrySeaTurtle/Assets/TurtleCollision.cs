@@ -22,6 +22,7 @@ public class TurtleCollision : MonoBehaviour
     private bool firstJar = false;
     private bool firstCan = false;
 
+
     void Update()
     {
       checkForNextLevel();
@@ -46,7 +47,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Box" && firstBox == false) {
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBoxInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -56,7 +60,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Straw" && firstStraw == false) {
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayStrawInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -66,7 +73,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Detergent" && firstDetergent == false) {
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayDetergentInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -76,7 +86,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Bottle" && firstBottle == false){
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -86,7 +99,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "GlassBottle" && firstGlassBottle == false){
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -96,7 +112,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "GlassBottle2" && firstGlassBottle2 == false){
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -106,7 +125,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Cup" && firstCup == false){
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -116,7 +138,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Can" && firstCan == false){
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -126,7 +151,10 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Jar" && firstJar == false){
 
         //Code for decreasing score goes here
-        PersistentData.subtractScore();
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
+
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
         Time.timeScale = 0f;
@@ -144,7 +172,9 @@ public class TurtleCollision : MonoBehaviour
 	else{
 
 		//Code for decreasing score goes here
-    PersistentData.subtractScore();
+    if(PersistentData.playerScore != 0){
+      PersistentData.subtractScore();
+    }
 		Destroy(collider.gameObject);
 
 	  }
