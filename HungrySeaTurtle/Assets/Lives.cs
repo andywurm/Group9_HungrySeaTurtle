@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Lives : MonoBehaviour
 {
-  public static int currentLives = 1;
   Text life;
 
   // Start is called before the first frame update
@@ -17,6 +16,6 @@ public class Lives : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    life.text = "LIVES: " + currentLives;
+    life.text = "SCORE: " + PersistentData.playerScore;
   }
 }

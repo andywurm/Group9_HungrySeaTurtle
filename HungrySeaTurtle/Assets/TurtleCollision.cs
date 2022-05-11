@@ -23,11 +23,23 @@ public class TurtleCollision : MonoBehaviour
     private bool firstCan = false;
 
 
+    void Update()
+    {
+      checkForNextLevel();
+    }
+
+    void checkForNextLevel(){
+      if(PersistentData.playerScore == 100){
+        SceneManager.LoadScene("Level2");
+      }
+    }
+
     public void OnTriggerEnter2D (Collider2D collider)
   {
       if(collider.gameObject.tag == "Fish"){
 
-            //Code for adding to score goes here
+        //Code for adding to score goes here
+        PersistentData.addToScore();
         hungerBar.Hunger += 20f;
         Destroy(collider.gameObject);
 
@@ -35,6 +47,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Box" && firstBox == false) {
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBoxInfo.SetActive(true);
@@ -45,6 +60,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Straw" && firstStraw == false) {
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayStrawInfo.SetActive(true);
@@ -55,6 +73,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Detergent" && firstDetergent == false) {
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayDetergentInfo.SetActive(true);
@@ -65,6 +86,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Bottle" && firstBottle == false){
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
@@ -75,6 +99,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "GlassBottle" && firstGlassBottle == false){
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
@@ -85,6 +112,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "GlassBottle2" && firstGlassBottle2 == false){
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
@@ -95,6 +125,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Cup" && firstCup == false){
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
@@ -105,6 +138,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Can" && firstCan == false){
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
@@ -115,6 +151,9 @@ public class TurtleCollision : MonoBehaviour
       else if(collider.gameObject.tag == "Jar" && firstJar == false){
 
         //Code for decreasing score goes here
+        if(PersistentData.playerScore != 0){
+          PersistentData.subtractScore();
+        }
 
         Destroy(collider.gameObject);
         DisplayBottleInfo.SetActive(true);
@@ -133,7 +172,9 @@ public class TurtleCollision : MonoBehaviour
 	else{
 
 		//Code for decreasing score goes here
-
+    if(PersistentData.playerScore != 0){
+      PersistentData.subtractScore();
+    }
 		Destroy(collider.gameObject);
 
 	  }

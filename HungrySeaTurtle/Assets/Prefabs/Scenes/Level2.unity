@@ -911,7 +911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'LIVES: '
+  m_Text: 'SCORES: '
 --- !u!222 &585602575
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1346,10 +1346,6 @@ GameObject:
   m_Component:
   - component: {fileID: 731905337}
   - component: {fileID: 731905336}
-  - component: {fileID: 731905335}
-  - component: {fileID: 731905334}
-  - component: {fileID: 731905333}
-  - component: {fileID: 731905332}
   - component: {fileID: 731905338}
   m_Layer: 0
   m_Name: Buttons
@@ -1358,58 +1354,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &731905332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731905331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc6afa371dc9640cf9416dd2cb510c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayInfo: {fileID: 0}
---- !u!114 &731905333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731905331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36ceeabcb3254ba7b36f0f94bd21af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayInfo: {fileID: 0}
---- !u!114 &731905334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731905331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b96f17189ec747d0bd718490a278f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayInfo: {fileID: 0}
---- !u!114 &731905335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731905331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2cfea542351412496924bd46d587bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayInfo: {fileID: 0}
 --- !u!212 &731905336
 SpriteRenderer:
   m_ObjectHideFlags: 0

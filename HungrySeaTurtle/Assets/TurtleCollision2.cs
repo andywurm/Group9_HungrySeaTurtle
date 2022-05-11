@@ -9,12 +9,34 @@ public class TurtleCollision2 : MonoBehaviour
 
 	  [SerializeField] GameObject DisplayGameover;
 
+    void Update()
+    {
+      checkForLevel3();
+      checkForEnd();
+    }
+
+    void checkForLevel3(){
+
+      if(PersistentData.playerScore == 200){
+        SceneManager.LoadScene(3);
+      }
+
+    }
+
+    void checkForEnd(){
+
+      if(PersistentData.playerScore == 300){
+        SceneManager.LoadScene("End");
+      }
+
+    }
+
     public void OnTriggerEnter2D (Collider2D collider)
   {
       if(collider.gameObject.tag == "Fish"){
 
         //Code for adding to score goes here
-
+        PersistentData.addToScore();
         hungerBar.Hunger += 20f;
         Destroy(collider.gameObject);
 
@@ -29,7 +51,7 @@ public class TurtleCollision2 : MonoBehaviour
   	else{
 
   		//Code for decreasing score goes here
-
+      PersistentData.subtractScore();
   		Destroy(collider.gameObject);
 
   	  }

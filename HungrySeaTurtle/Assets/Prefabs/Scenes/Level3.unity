@@ -1010,7 +1010,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'LIVES: '
+  m_Text: 'SCORE: '
 --- !u!222 &585602575
 CanvasRenderer:
   m_ObjectHideFlags: 0

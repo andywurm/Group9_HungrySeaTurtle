@@ -2675,7 +2675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'LIVES: '
+  m_Text: 'SCORE: '
 --- !u!222 &1769697552
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3241,6 +3241,7 @@ MonoBehaviour:
   DisplayStrawInfo: {fileID: 2059020044}
   DisplayDetergentInfo: {fileID: 332349842}
   DisplayBottleInfo: {fileID: 1976523376}
+  DisplayGameover: {fileID: 0}
 --- !u!114 &1963632600
 MonoBehaviour:
   m_ObjectHideFlags: 0
