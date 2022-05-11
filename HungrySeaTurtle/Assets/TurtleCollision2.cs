@@ -17,7 +17,7 @@ public class TurtleCollision2 : MonoBehaviour
 
     void checkForLevel3(){
 
-      if(PersistentData.playerScore == 200){
+      if(SceneManager.GetActiveScene().buildIndex == 2 && PersistentData.playerScore == 200){
         SceneManager.LoadScene(3);
       }
 
