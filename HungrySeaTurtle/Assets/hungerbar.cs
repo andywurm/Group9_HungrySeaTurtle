@@ -8,6 +8,7 @@ public class hungerbar : MonoBehaviour
     public Slider HungerSlider;
     public static float Hunger;
     float maxHunger = 100f;
+    public GameObject gameOver;
 
     void Start()
     {
@@ -17,10 +18,16 @@ public class hungerbar : MonoBehaviour
 
     void Update()
     {
-        // Debug.Log(Hunger);
+        
         HungerSlider.value = Hunger;
 
         Hunger -= 1f * Time.deltaTime;
+
+        if (HungerSlider.value <= 1)
+        {
+            gameOver.SetActive(true);
+        }
+
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
@@ -41,5 +48,72 @@ public class hungerbar : MonoBehaviour
         {
             Hunger -= 1f * Time.deltaTime;
         }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Box")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "Straw")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "Detergent")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "Bottle")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "GlassBottle")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "GlassBottle2")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "Cup")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "Jar")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
+        if (collider.gameObject.tag == "Can")
+        {
+            Hunger -= 10f;
+            Destroy(collider.gameObject);
+
+        }
+
     }
 }
