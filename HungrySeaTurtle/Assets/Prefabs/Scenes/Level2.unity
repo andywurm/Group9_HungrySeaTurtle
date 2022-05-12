@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8f222a5c2f94a4f9d60205a93d7740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickup: 0
 --- !u!114 &22814560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +522,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Continue
 --- !u!222 &417170164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2761,6 +2762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c588df263b5b33459ed9e4257e21146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickup: 0
 --- !u!114 &1678222067
 MonoBehaviour:
   m_ObjectHideFlags: 0
