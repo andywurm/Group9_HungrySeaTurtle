@@ -9,12 +9,18 @@ public class movement : MonoBehaviour
 	[SerializeField] float movement2;
 	[SerializeField] int speed;
 	[SerializeField] bool isFacingRight = true;
+	[SerializeField] Animator animator;
+	const int IDLE = 0;
+	const int MOVE = 1;
     // Start is called before the first frame update
     void Start()
     {
 		if (rigid == null)
             rigid = GetComponent<Rigidbody2D>();
 		speed = 5;
+		if (animator == null)
+            animator = GetComponent<Animator>();
+		animator.SetInteger("move", IDLE);
     }
 
     // Update is called once per frame
@@ -24,6 +30,10 @@ public class movement : MonoBehaviour
 		movement2 = Input.GetAxis("Vertical");
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7f, 7f), Mathf.Clamp(transform.position.y, -5f, 5f),
 		transform.position.z);
+		if (movements >= .01 || movements <= -.01||movement2 >= .01 || movement2 <= -.01)
+                animator.SetInteger("move", MOVE);
+            else
+                animator.SetInteger("move", IDLE);
 
     }
 	 void FixedUpdate(){
