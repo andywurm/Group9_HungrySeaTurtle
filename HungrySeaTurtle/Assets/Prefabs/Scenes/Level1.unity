@@ -3965,6 +3965,7 @@ GameObject:
   - component: {fileID: 1941792032}
   - component: {fileID: 1941792034}
   - component: {fileID: 1941792033}
+  - component: {fileID: 1941792035}
   m_Layer: 5
   m_Name: gameOver
   m_TagString: Untagged
@@ -4031,6 +4032,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941792031}
   m_CullTransparentMesh: 1
+--- !u!114 &1941792035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941792031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ad0b34b54d44a25bbb68a952c786aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1963632593
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,7 +4215,7 @@ MonoBehaviour:
   DisplayStrawInfo: {fileID: 2059020044}
   DisplayDetergentInfo: {fileID: 332349842}
   DisplayBottleInfo: {fileID: 1976523376}
-  DisplayGameover: {fileID: 0}
+  DisplayGameover: {fileID: 1941792031}
 --- !u!114 &1963632600
 MonoBehaviour:
   m_ObjectHideFlags: 0
