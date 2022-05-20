@@ -162,7 +162,7 @@ MonoBehaviour:
   - {fileID: 4388550742540388199, guid: 5125a3575474fd243ab7e88a9acddd8d, type: 3}
   - {fileID: 8430589369112860746, guid: 7dd2c43874e615b468aab5057e53f3d6, type: 3}
   - {fileID: 4578772940513488751, guid: 63d29a200b6102345ac6d4af4093f9ac, type: 3}
-  respawnTime: 5
+  respawnTime: 2
   itemCount: 9
 --- !u!4 &2269071
 Transform:
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 4759057640028694139, guid: 95a6e6c2de1380a43942178331079395, type: 3}
-  respawnTime: 1
+  respawnTime: 2
 --- !u!4 &215208442
 Transform:
   m_ObjectHideFlags: 0
