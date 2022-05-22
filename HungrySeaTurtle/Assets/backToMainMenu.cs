@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class backToMenu : MonoBehaviour
+public class backToMainMenu : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,11 +17,8 @@ public class backToMenu : MonoBehaviour
     {
         
     }
-
-   
-	public void theEnd(){
-		//PersistentData.Instance.SetScore(0);
-		SceneManager.LoadScene(0);
-		}
-
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
